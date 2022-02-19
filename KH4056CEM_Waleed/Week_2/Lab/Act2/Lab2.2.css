@@ -1,0 +1,101 @@
+*{font-family: cursive;}
+    
+h4,h1{text-align: center}
+
+.google-class{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.Custom-h1{
+padding: 40px 40px ;
+border-radius: 20px;
+border: 2px purple;
+width: 500px ;
+margin: 30px auto;}
+
+
+ol{ width: 600px ;
+    margin-left: auto;
+    margin-right: auto;}
+
+
+
+h1 {
+    color : purple ;
+    background-color: pink  ; }
+
+
+.front-end{
+color:  blue;
+background-color: grey ;
+width: 300px ;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.Back-end {
+
+color : white ;
+background-color: #000;
+width: 300px ;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+
+
+}
+
+blockquote{
+    color:red ;
+    text-align: center;
+
+}
+cite{
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol .js li {
+
+color: red ;
+
+}
+
+ol .first .second li {
+    color: blue
+}
+
+p{
+background-color: #ddd;
+border: 3px solid rgb(122, 122, 122);
+padding: 20px 20px ;
+width: 100px;
+border-radius:30px;
+text-decoration: underline;
+font-style: italic;
+font-weight: bold;
+color:navy;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.image{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.last-link{
+    display: block;
+    width: 108px;
+    margin-left: auto;
+    margin-right:auto
+    }
