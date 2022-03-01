@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lab 3.1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+  <style>
+  
+  .btn { background-color: red ;
+    color:#fff;
+    padding: 10px 20px 10px 20px;
+    margin-right: 10px;
+    border: none ;
+    text-transform: uppercase;
+    font-weight: bold;} 
+
+    
+    .reddit, .google, .youtube {
+  display: flex;
+  align-items: center ;
+  justify-content: center
+}
+fieldset {
+
+background-color: #b0b8bbb4 ;
+border: none ;
+width:600px;
+
+}
+
+div {
+margin-bottom: 50px
+}
+legend {
+  text-transform: uppercase;
+  background-color:#e5f6fb ;
+  padding:5px 20px;
+}
+
+input[type="text"],
+input[type="submit"]
+{
+
+  background-color:#e8eeef;
+  border: 1px solid #DDDDDD;
+  padding;
+  padding:15px ;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  color:#8a97a0;
+  box-sizing:border-box;
+
+   width:90%;
+   outline:0 ;
+}
+
+input[type="text"]:focus {
+  box-shadow:0 0 5px rgb(55, 180, 214);
+  border: 1px solid rgb(70, 189, 223);
+}
+input[type="submit"] {
+background-color:rgb(66, 212, 93);
+color:#fff;
+text-transform: uppercase;
+font-size: 15px ;
+cursor: pointer
+}
+
+label {
+display:block;
+margin-left: 5%;
+margin-bottom: 10px;
+ margin-top: 20px
+ }
+    </style>
+
+</head>
+
+
+<body>
+    <h1 style="text-align: center; font-family: monospace; font-size: 30px; text-decoration: underline wavy rgb(224, 35, 161);">Forms: Hijacking Websites
+    </h1>
+    <hr>
+    <br>
+    <div>
+        <div style = "display: flex;
+        align-items: center;
+        justify-content: center;">
+            <button class= "btn" type="button" name="button"> Click Me </button>
+            <button class= "btn" type="button" name="button"> Click Me </button>
+        </div>
+        <div style="display: flex;
+        align-items: center ;
+        justify-content: center"> 
+      
+    <form class="" action="https://www.reddit.com/search/?" method="GET">
+        <fieldset>
+            <legend>Hijacking Reddit</legend>
+            <label for="reddit">Search Reddit:</label>
+            <input type="text" name="q" id="reddit" placeholder="Type something.." required>
+            <input type="submit"  value="Search">
+        </fieldset>
+
+    </form>
+</div>
+    <div style = "display: flex;
+    align-items: center;
+    justify-content: center;">
+     <form class="" action="https://www.google.com/search?q=cats" target="_blank" method="GET">
+        <fieldset>
+          <legend>Hijacking Google</legend>
+          <label for="google">Search Google:</label>
+          <input type="text" name="q" id="google" placeholder="Type something.." required>
+          <input type="submit"  value="Search">
+        </fieldset>
+    
+    
+    
+      </form>
+    </div>
+    
+    
+    <div style = "display: flex;
+    align-items: center;
+    justify-content: center;">
+
+    <form class="" action="https://www.youtube.com/results?" target="_blank" method="GET">
+      <fieldset>
+        <legend>Hijacking Youtube</legend>
+        <label for="youtube">Search Youtube:</label>
+        <input type="text" name="search_query" id="youtube" placeholder="Type something.." required>
+        <input type="submit"  value="Search">
+      </fieldset>
+    </div>
+    
+   
+
+</body>
+</html>
